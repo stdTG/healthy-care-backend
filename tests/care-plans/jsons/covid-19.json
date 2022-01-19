@@ -1,0 +1,51 @@
+{
+  "id": "covid-19",
+  "title": "Covid-19 Care Plan",
+  "steps": {
+    "greeting": {
+      "nextStep": "questionarie"
+    },
+    "questionarie": {
+      "nextStep": "prescriptionPlan",
+      "questions": [
+        "Your age?",
+        "Your profession"
+      ]
+    },
+    "questionarieAssessment": {
+      "id": "covid-19-assessment",
+      "function_callback": "/care-plans/covid-19-assessment",
+      "outcomes": [
+        {
+          "bad": "covid-19-emergency-help"
+        },
+        {
+          "good": "action_step_phone_call"
+        },
+        {
+          "moderate": "appointmentOffer"
+        }
+      ]
+    },
+    "emergency_help": {
+      "id": "covid-19-emergency-help"
+    },
+    "action_step": {
+      "id": "action_step_phone_call"
+    },
+    "appointmentOffer": {
+      "message": "Okay, now let's"
+    },
+    "prescriptionPlan": [
+      {
+        "medicine": "Paracetamol",
+        "dose": "1g",
+        "message": "Please, take 1g of Paracetaml",
+        "amount": 15
+      },
+      {
+        "medicine": "Aspirine"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "alias" : "tenant-host-1",
+    "name" : "Local Tenant Host",
+    "description" : "",
+    "connection_string_format" : "mongodb://localhost/{dbname}",
+    "db_host" : "localhost",
+    "db_user" : "",
+    "db_password" : ""
+}

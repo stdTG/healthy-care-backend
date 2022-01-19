@@ -1,0 +1,54 @@
+{
+  "Comment": "Alakine User Inputs",
+  "StartAt": "Greeting",
+  "States": {
+    "Greeting": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "TimeoutSeconds": 10,
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.text",
+          "stepName": "$$.State.Name",
+          "carePlanId": "$.input.carePlanId",
+          "patientId": "$.input.patientId",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "Next": "UserInput1"
+    },
+    "UserInput1": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "TimeoutSeconds": 10,
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.user_input",
+          "stepName": "$$.State.Name",
+          "carePlanId": "$.input.carePlanId",
+          "patientId": "$.input.patientId",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "Next": "UserInput2"
+    },
+    "UserInput2": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "TimeoutSeconds": 10,
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.user_input",
+          "stepName": "$$.State.Name",
+          "carePlanId": "$.input.carePlanId",
+          "patientId": "$.input.patientId",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "End": true
+    }
+  }
+}

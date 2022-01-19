@@ -1,0 +1,90 @@
+{
+  "Comment": "Alakine User Inputs",
+  "StartAt": "Greeting",
+  "States": {
+    "Greeting": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "TimeoutSeconds": 100,
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.text_prompt",
+          "carePlanId.$": "$.input.carePlanId",
+          "widgetId.$": "$.input.widgetId",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": null,
+      "Next": "Question_Text1"
+    },
+    "Question_Text1": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "TimeoutSeconds": 100,
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.text_prompt",
+          "carePlanId.$": "$.input.carePlanId",
+          "widgetId.$": "$.input.widgetId",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": null,
+      "Next": "Question_YesNo1"
+    },
+    "Question_YesNo1": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "TimeoutSeconds": 100,
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.yes_no_prompt",
+          "carePlanId.$": "$.input.carePlanId",
+          "widgetId.$": "$.input.widgetId",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": null,
+      "Next": "Question_NumberSimple1"
+    },
+    "Question_NumberSimple1": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "TimeoutSeconds": 100,
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.number_simple_prompt",
+          "carePlanId.$": "$.input.carePlanId",
+          "widgetId.$": "$.input.widgetId",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": null,
+      "Next": "ShouldRepeat?"
+    },
+    "ShouldRepeat?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.input.repeat",
+          "NumericEquals": 0,
+          "Next": "Finish"
+        }
+      ],
+      "Default": "WaitOneMinute"
+    },
+    "WaitOneMinute": {
+      "Type": "Wait",
+      "Seconds": 60,
+      "Next": "Greeting"
+    },
+    "Finish": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}

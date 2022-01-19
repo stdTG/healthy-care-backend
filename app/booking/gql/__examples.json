@@ -1,0 +1,98 @@
+query gethours {
+  schedule {
+    timeslotMany(filter: {date: "2020-12-22"}) {
+      items{
+        startTime
+        endTime
+      }
+    }
+  }
+}
+
+
+query get_apps {
+  schedule {
+    eventMany(filter: {startDate: "2020-12-21", endDate: "2020-12-23"
+      patient: "5fc9cb4154c9205a217b8f4a"}) {
+      items {
+        ... on Appointment{
+          startDate
+          createdBy {
+            id_
+          }
+        }
+        ... on Event{
+          title
+          startDate
+          careTeamStatuses {
+            user {
+              firstName
+            }
+
+          }
+          patientStatuses {
+            userId
+          }
+        }
+      }
+    }
+  }
+}
+
+
+mutation addappintment {
+  schedule {
+    createAppointment(record: {title: "appointment1", eventType: VACCINATION,
+      startDate: "2020-12-22T08:15:00", endDate: "2020-12-22T08:30:00", patient:"5fc9cb4154c9205a217b8f4a"}) {
+      ok
+      record {
+        startDate
+        endDate
+        careTeamMember {
+          status
+          user {
+            firstName
+          }
+        }
+        patient {
+          user {
+            firstName
+          }
+        }
+      }
+      error {
+        message
+      }
+    }
+  }
+}
+
+
+
+mutation addevent {
+  schedule {
+    createEvent(record: {title: "event",
+      startDate: "2020-12-22T10:15:00", endDate: "2020-12-22T11:45:00",
+      patients:["5fc9cb4154c9205a217b8f4a"], careTeamMembers: ["5fcb6ed3c5ecd123622baed9"], careTeamMember: "5fd4fba9e363e26ccee9b110"}) {
+      ok
+      record {
+        startDate
+        endDate
+        careTeamMember {
+          status
+          user {
+            firstName
+          }
+        }
+        patientStatuses {
+          user {
+            firstName
+          }
+        }
+      }
+      error {
+        message
+      }
+    }
+  }
+}

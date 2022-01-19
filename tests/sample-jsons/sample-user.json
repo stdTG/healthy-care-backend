@@ -1,0 +1,46 @@
+{
+  "firstName": "Alexander",
+  "lastName": "Pushkin",
+  "role": "doctor",
+  "unitId": "5f4e1068282cbbf3e880c001",
+  "language": "en_us",
+  "birthDate": "2020-09-05",
+  "sex": "Male",
+  "email": "pushkin@alakine.com",
+  "phone": "string",
+  "address": {
+    "country": "string",
+    "city": "string",
+    "address": "string",
+    "zipcode": "string",
+    "latitude": 0,
+    "longitude": 0
+  },
+  "photo": "string",
+  "lifestyle": [
+    {
+      "activity": "string",
+      "description": "string"
+    }
+  ],
+  "vaccines": [
+    {
+      "name": "string",
+      "date": "2020-09-05"
+    }
+  ],
+  "family": {
+    "mother": [
+      "string"
+    ],
+    "father": [
+      "string"
+    ],
+    "grandmother": [
+      "string"
+    ],
+    "grandfather": [
+      "string"
+    ]
+  }
+}

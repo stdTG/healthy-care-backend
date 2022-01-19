@@ -1,0 +1,131 @@
+{
+  "Version": "1.0",
+  "StartAt": "Startup",
+  "TimeoutSeconds": 3000,
+  "States": {
+    "Startup": {
+      "Type": "Pass",
+      "Next": "Text4039"
+    },
+    "Text4039": {
+      "Type": "Task",
+      "Next": "Question_MultipleChoice3534",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-oleg-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.text",
+          "workspace.$": "$.input.workspace",
+          "carePlanAssignmentId.$": "$.input.carePlanAssignmentId",
+          "widgetId": "6081b94c3141aaa8a10e7d3a",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": "$.results.Text4039"
+    },
+    "Question_MultipleChoice3534choice": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.results.Question_MultipleChoice3534.select",
+          "NumericEquals": 0,
+          "Next": "Text5939"
+        },
+        {
+          "Variable": "$.results.Question_MultipleChoice3534.select",
+          "NumericEquals": 1,
+          "Next": "Text4740"
+        },
+        {
+          "Variable": "$.results.Question_MultipleChoice3534.select",
+          "NumericEquals": 2,
+          "Next": "Text6664"
+        }
+      ]
+    },
+    "Question_MultipleChoice3534": {
+      "Type": "Task",
+      "Next": "Question_MultipleChoice3534choice",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-oleg-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.multiple_choice_prompt",
+          "workspace.$": "$.input.workspace",
+          "carePlanAssignmentId.$": "$.input.carePlanAssignmentId",
+          "widgetId": "6081b94c3141aaa8a10e7d3b",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": "$.results.Question_MultipleChoice3534"
+    },
+    "Text5939": {
+      "Type": "Task",
+      "Next": "Question_NumberSimple2538",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-oleg-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.text",
+          "workspace.$": "$.input.workspace",
+          "carePlanAssignmentId.$": "$.input.carePlanAssignmentId",
+          "widgetId": "6081b94c3141aaa8a10e7d3c",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": "$.results.Text5939"
+    },
+    "Text4740": {
+      "Type": "Task",
+      "Next": "Question_NumberSimple2538",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-oleg-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.text",
+          "workspace.$": "$.input.workspace",
+          "carePlanAssignmentId.$": "$.input.carePlanAssignmentId",
+          "widgetId": "6081b94c3141aaa8a10e7d3d",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": "$.results.Text4740"
+    },
+    "Text6664": {
+      "Type": "Task",
+      "Next": "Question_NumberSimple2538",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-oleg-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.text",
+          "workspace.$": "$.input.workspace",
+          "carePlanAssignmentId.$": "$.input.carePlanAssignmentId",
+          "widgetId": "6081b94c3141aaa8a10e7d3e",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": "$.results.Text6664"
+    },
+    "Question_NumberSimple2538": {
+      "Type": "Task",
+      "Next": "Finish",
+      "Resource": "arn:aws:states:::lambda:invoke.waitForTaskToken",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-oleg-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.question.number_simple_prompt",
+          "workspace.$": "$.input.workspace",
+          "carePlanAssignmentId.$": "$.input.carePlanAssignmentId",
+          "widgetId": "6081b94c3141aaa8a10e7d3f",
+          "taskToken.$": "$$.Task.Token"
+        }
+      },
+      "ResultPath": "$.results.Question_NumberSimple2538"
+    },
+    "Finish": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}

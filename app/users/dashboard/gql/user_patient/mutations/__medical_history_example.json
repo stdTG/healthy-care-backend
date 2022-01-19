@@ -1,0 +1,98 @@
+mutation add{
+  patientUser {
+  medicalHistory {
+  add(patient: "5fc9cafc54c9205a217b8f46",
+  record: {
+    name: "cancer",
+    date: "2019-11-11",
+    comment: "comment"
+  }
+  ) {
+  ok
+  error {
+  message
+}
+record {
+  uuid
+  name
+}
+}
+}
+}
+}
+
+
+query getPat {
+patientUserById(id_: "5fc9cafc54c9205a217b8f46") {
+items {
+medicalHistory{
+uuid
+name
+comment
+}
+}
+}
+}
+
+
+
+mutation updateMed{
+patientUser {
+medicalHistory {
+update(patient: "5fc9cafc54c9205a217b8f46", record: {uuid: "dfe77102-a7a5-4235-a551-2bf737364e51",
+name: "update", date: "2019-11-11", comment: "update"
+}) {
+ok
+error {
+message
+}
+record {
+uuid
+name
+}
+}
+}
+}
+}
+
+
+mutation deleteMed{
+patientUser {
+medicalHistory {
+delete(patient: "5fc9cafc54c9205a217b8f46", medicalHistoryUuid: "dfe77102-a7a5-4235-a551-2bf737364e51"
+
+) {
+ok
+error {
+message
+}
+uuid
+}
+}
+}
+}
+
+
+
+mutation updateMany{
+patientUser {
+medicalHistory {
+updateMany(patient: "5fc9cafc54c9205a217b8f46", record: {
+medicalHistory: [
+{
+uuid: "d7a80c19-d170-46bb-9997-fa311e210319",
+name: "cancer2",
+comment: "comment2"
+}
+]
+}) {
+ok
+record {
+name
+}
+}
+}
+}
+}
+
+

@@ -1,0 +1,480 @@
+{
+    "graph": [
+        {
+            "id": "2",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "NgNfW-qKr",
+            "target": "gB-e0rX6z",
+            "parentId": "1"
+        },
+        {
+            "id": "3",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "gB-e0rX6z",
+            "target": "GaPvUczuv",
+            "parentId": "1"
+        },
+        {
+            "id": "4",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "GaPvUczuv",
+            "target": "pLPzHs2CG",
+            "parentId": "1"
+        },
+        {
+            "id": "5",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "GaPvUczuv",
+            "target": "KNd_MS6ex",
+            "parentId": "1"
+        },
+        {
+            "id": "6",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "GaPvUczuv",
+            "target": "cLhAVN3BY",
+            "parentId": "1"
+        },
+        {
+            "id": "7",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "pLPzHs2CG",
+            "target": "D5iBoXrFU",
+            "parentId": "1"
+        },
+        {
+            "id": "8",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "KNd_MS6ex",
+            "target": "-SOKJ-lUN",
+            "parentId": "1"
+        },
+        {
+            "id": "9",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "cLhAVN3BY",
+            "target": "FZEqbhNRm",
+            "parentId": "1"
+        },
+        {
+            "id": "10",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "D5iBoXrFU",
+            "target": "-S4xDlk3R",
+            "parentId": "1"
+        },
+        {
+            "id": "13",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "-S4xDlk3R",
+            "target": "BQxglvUmk",
+            "parentId": "1"
+        },
+        {
+            "id": "NgNfW-qKr",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 736,
+                "y": -816.5,
+                "width": 200,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "type": "1",
+                "text": "Привет Олег",
+                "id": "NgNfW-qKr",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "gB-e0rX6z",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 680,
+                "y": -679,
+                "width": 320,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "gB-e0rX6z",
+                "text": "Эта схема для тестирования парсера",
+                "type": "1",
+                "parentId": "1",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "GaPvUczuv",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 680,
+                "y": -549,
+                "width": 250,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "GaPvUczuv",
+                "text": "Получаешь ли ты достаточно мотивации?",
+                "type": "11",
+                "parentId": "1",
+                "children": [
+                    {
+                        "id": "pLPzHs2CG",
+                        "value": {
+                            "text": "ДА ОФИГЕННО",
+                            "type": "8",
+                            "childParentId": "GaPvUczuv"
+                        },
+                        "offsetY": 50,
+                        "width": 100,
+                        "height": 50,
+                        "offsetX": -200
+                    },
+                    {
+                        "id": "KNd_MS6ex",
+                        "value": {
+                            "text": "НЕТ ОЧ ПЛОХО",
+                            "type": "8",
+                            "childParentId": "GaPvUczuv"
+                        },
+                        "offsetY": 50,
+                        "width": 100,
+                        "height": 50,
+                        "offsetX": -50
+                    },
+                    {
+                        "id": "cLhAVN3BY",
+                        "value": {
+                            "text": "ПОЙДЕТ ГРЕБУ ДАЛЬШЕ",
+                            "type": "8",
+                            "childParentId": "GaPvUczuv"
+                        },
+                        "offsetY": 50,
+                        "width": 100,
+                        "height": 50,
+                        "offsetX": 100
+                    }
+                ],
+                "isSource": false,
+                "isChildrenShown": true,
+                "questionType": "14",
+                "width": 250,
+                "height": 80
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "pLPzHs2CG",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 605,
+                "y": -419,
+                "width": 125,
+                "height": 59,
+                "relative": false
+            },
+            "value": {
+                "id": "pLPzHs2CG",
+                "text": "ДА ОФИГЕННО",
+                "type": "8",
+                "childParentId": "GaPvUczuv",
+                "parentId": "GaPvUczuv"
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "KNd_MS6ex",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 755,
+                "y": -419,
+                "width": 100,
+                "height": 50,
+                "relative": false
+            },
+            "value": {
+                "id": "KNd_MS6ex",
+                "text": "НЕТ ОЧ ПЛОХО",
+                "type": "8",
+                "childParentId": "GaPvUczuv",
+                "parentId": "GaPvUczuv"
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "cLhAVN3BY",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 990,
+                "y": -419,
+                "width": 115,
+                "height": 79,
+                "relative": false
+            },
+            "value": {
+                "id": "cLhAVN3BY",
+                "text": "ПОЙДЕТ ГРЕБУ ДАЛЬШЕ",
+                "type": "8",
+                "childParentId": "GaPvUczuv",
+                "parentId": "GaPvUczuv"
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "D5iBoXrFU",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 460,
+                "y": -230,
+                "width": 220,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "D5iBoXrFU",
+                "text": "Отлично работай дальше",
+                "type": "1",
+                "parentId": "1",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "-SOKJ-lUN",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 710,
+                "y": -210,
+                "width": 220,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "-SOKJ-lUN",
+                "text": "ТЫ УВОЛЕН!!!!1111",
+                "type": "1",
+                "parentId": "1",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "FZEqbhNRm",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 990,
+                "y": -290,
+                "width": 220,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "FZEqbhNRm",
+                "text": "Молодец так держать",
+                "type": "1",
+                "parentId": "1",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "-S4xDlk3R",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 736,
+                "y": 140,
+                "width": 250,
+                "height": 180,
+                "relative": false
+            },
+            "value": {
+                "id": "-S4xDlk3R",
+                "text": "ОЦЕНИ СВОЮ РАБОТУ",
+                "type": "11",
+                "parentId": "1",
+                "children": [],
+"isSource": false,
+                "min": "0",
+                "max": "100",
+                "questionType": "15",
+                "width": 250,
+                "height": 180
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "BQxglvUmk",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 745,
+                "y": 380,
+                "width": 220,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "BQxglvUmk",
+                "text": "КОНЕЦ",
+                "type": "1",
+                "parentId": "1",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        }
+    ]
+}

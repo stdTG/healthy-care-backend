@@ -1,0 +1,15 @@
+{
+  "shortName": "ignilife",
+  "makeSuperAdmin": true,
+  "humanFriendlyName": "Ignilife",
+  "tenantDb1": {
+    "hostAlias": "tenant-host-1"
+  },
+  "tenantDb2": {
+    "hostAlias": "tenant-host-1"
+  },
+  "adminEmail": "alakine@nrg-soft.com",
+  "adminPhoneNumber": "+79117805596",
+  "adminPassword": "Alakine2020!"
+}
+

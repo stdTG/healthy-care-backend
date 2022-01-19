@@ -1,0 +1,19 @@
+mutation g {
+  patientUser {
+    create(record: {firstName: "Vlad", lastName: "Ogai", birthDate: "2020-10-27", sex: UNDEFINED, byEmail: {email: "vlad.ogai+patient1@nrg-soft.com", sendEmail: true}}) {
+      recordId
+      error {
+        code
+        message
+        __typename
+        ... on TitleAlreadyTakenError {
+          path
+        }
+      }
+      ok
+      record {
+        sex
+      }
+    }
+  }
+}

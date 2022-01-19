@@ -1,0 +1,7 @@
+{
+  "taskName": "care_plans.text",
+  "stepName": "Greeting",
+  "carePlanId": "CP_10000",
+  "patientId": "PAT_99999",
+  "taskToken": "just-a-placeholder-instead-of-task-token"
+}

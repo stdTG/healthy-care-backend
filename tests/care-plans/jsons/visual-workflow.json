@@ -1,0 +1,142 @@
+{
+    "graph": [
+        {
+            "id": "2",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "children": null,
+            "source": "vFWvMmxPp6",
+            "target": "QuJ_swViV"
+        },
+        {
+            "id": "3",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "children": null,
+            "source": "QuJ_swViV",
+            "target": "TAaJygNXL"
+        },
+        {
+            "id": "4",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "children": null,
+            "source": "QuJ_swViV",
+            "target": "2tJ8Iy8HZp"
+        },
+        {
+            "id": "vFWvMmxPp6",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 700,
+                "y": 30,
+                "width": 190,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "type": "1",
+                "text": "Hello, {name}\n"
+            },
+            "children": null,
+            "source": null,
+            "target": null
+        },
+        {
+            "id": "QuJ_swViV",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 700,
+                "y": 160,
+                "width": 220,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "text": "How are you today?",
+                "type": "2",
+                "parentId": "vFWvMmxPp6",
+                "children": [
+                    "TAaJygNXL",
+                    "2tJ8Iy8HZp"
+                ]
+            },
+            "children": null,
+            "source": null,
+            "target": null
+        },
+        {
+            "id": "TAaJygNXL",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 570,
+                "y": 280,
+                "width": 190,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "text": "Good",
+                "type": "8",
+                "parentId": "QuJ_swViV"
+            },
+            "children": null,
+            "source": null,
+            "target": null
+        },
+        {
+            "id": "2tJ8Iy8HZp",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 900,
+                "y": 290,
+                "width": 190,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "text": "Bad",
+                "type": "8",
+                "parentId": "QuJ_swViV"
+            },
+            "children": null,
+            "source": null,
+            "target": null
+        }
+    ]
+}

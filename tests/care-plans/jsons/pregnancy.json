@@ -1,0 +1,87 @@
+{
+  "id": "pregnance",
+  "title": "Pregnancy Care Plan",
+  "steps": {
+
+    "greeting": {
+      "message": "Hello, dear <PATIENT_NAME>! Here we are going to help you bear your child with care and love.",
+      "nextStep": "questionarie"
+    },
+
+    "question1": {
+      "message": "How old are you?",
+      "expected_data": "age",
+      "resultVarName": "varAge",
+      "next": "question2"
+    },
+
+    "question2": {
+      "message": "What stage you are at now?",
+      "expected_data": "period",
+      "resultVarName": "varStage",
+      "next": "question3"
+    },
+
+    "question3": {
+      "message": "What Temp you have now?",
+      "expected_data": "period",
+      "resultVarName": "varT",
+      "next": "calculator1"
+    },
+
+    "calculator1": {
+        "formula": "($varAge + $varStage) / $varT",
+        "resultVarName": "calculatedScoreVar",
+        "next": "mapper1"
+    },
+
+    "mapper1": {
+      "inputVarName": "calculatedScoreVar",
+      "mapping_func": "....",
+      "resultVarName": "mappedScore",
+      "next": "conditionalStep1"
+    },
+
+    "conditionalStep1": {
+      "description": "Decide what to do next",
+      "variableToCheck": "$mappedScore",
+      "switch": {
+        "critical": "CallAmbulance",
+        "bad": "",
+        "moderate": "",
+        "ok": ""
+      },
+      "next": "undefinedResult"
+    },
+
+    "undefinedResult": {
+      "description": "decide_whats_next_appointment_or_emergency_help",
+      "function_callback": "/care-plan/conditional-step", // care_plan_instance_id
+      "params": {
+        "arg1": 
+      },
+      "next": "conditionalStep1"
+    },
+
+    "conditionalStep3": {
+      "description": "decide_whats_next_appointment_or_emergency_help",
+      "function_callback": "/care-plan/conditional-step", // is Score <= 5
+      "next": "conditionalStep1"
+    },
+    "appointmentOffer": {
+      "message": "Okay, now let's make an appointment",
+      "action_type": "appointment_offer"
+    },
+    "prescriptionPlan": [
+      {
+        "medicine": "Paracetamol",
+        "dose": "1g",
+        "message": "Please, take 1g of Paracetaml",
+        "amount": 15
+      },
+      {
+        "medicine": "Aspirine"
+      }
+    ]
+  }
+}

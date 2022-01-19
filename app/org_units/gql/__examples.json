@@ -1,0 +1,173 @@
+mutation careteam {
+  orgUnit {
+  addUsers(record: {
+    orgUnit: "5fd87606d88071c9d3fb8075",
+    users: [
+      "5fcb6ed3c5ecd123622baed9"
+    ]
+  }
+  ) {
+  ok
+  record {
+  ...
+  on
+  SubOrganization {
+  name
+}
+... on CareTeam {
+  name
+}
+}
+}
+}
+}
+
+mutation create_careteam {
+orgUnit {
+createCareTeam(record: {name: "mycareteam5"}) {
+record {
+name
+}
+error {
+code
+message
+}
+ok
+}
+}
+}
+
+query get_careteams{
+orgUnit{
+careTeamPagination(page: 0, perPage: 5) {
+items {
+id_
+subOrgId
+name
+supervisors {
+role
+}
+users {
+id_
+firstName
+lastName
+}
+}
+}
+}
+}
+
+mutation add_user {
+orgUnit {
+addUsers(record: {orgUnit: "5fe00e7c67cc832894bd72c6", users: ["5fd20eb71d70f4450a903130"]}) {
+ok
+recordId
+record {
+... on CareTeam {
+id_
+name
+}
+}
+}
+}
+}
+
+mutation delete_user {
+orgUnit {
+deleteUsers(record: {orgUnit: "5fe00e7c67cc832894bd72c6", users: ["5fd20eb71d70f4450a903130"]}) {
+ok
+recordId
+record {
+... on CareTeam {
+name
+users {
+lastName
+}
+}
+}
+}
+}
+}
+mutation update_careteam {
+orgUnit {
+updateCareTeam(record: {
+name: "mycareteam33"
+id_: "5fdfb7c41e05e13f3fedb2e7",
+subOrgId: "5fe0246b38f8a466262fea1f",
+
+}) {
+ok
+record {
+subOrgId
+}
+}
+}
+}
+mutation create_suborg {
+orgUnit {
+createSubOrg(record: {name: "suborg2"
+}) {
+record {
+name
+}
+error {
+code
+message
+}
+ok
+}
+}
+}
+
+
+query getsuborg {
+orgUnit {
+subOrgById(id_: "5fe0246b38f8a466262fea1f"){
+users {
+firstName
+}
+usersCount
+careTeamsCount
+}
+}
+}
+query getsuborgs {
+orgUnit {
+subOrgPagination(page: 0, perPage: 10) {
+items {
+name
+users {
+firstName
+}
+usersCount
+careTeamsCount
+}
+}
+}
+}
+
+query getsuborgusers {
+orgUnit {
+subOrgUserPagination(page: 0, perPage: 10, subOrgId: "5fe0246b38f8a466262fea1f") {
+items {
+language
+role
+orgUnitId
+speciality
+description
+title
+memberSince
+sex
+birthDate
+status
+duration
+}
+pageInfo {
+totalPages
+totalItems
+page
+perPage
+}
+}
+}
+}

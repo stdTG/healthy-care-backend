@@ -1,0 +1,38 @@
+{
+  "id": "alien-covid-19",
+  "patientId": "alien",
+  "carePlanId": "covid-19",
+
+  "currentState": "appointmentOffer",
+
+  "history": [
+    {
+      "timestamp": "2020-11-23 HH:mm",
+      "step": "greeting"
+    },
+    {
+      "timestamp": "2020-11-23 HH:mm",
+      "step": "questionarie",
+    },
+    {
+      "timestamp": "2020-11-23 HH:mm",
+      "step": "appointmentOffer"
+    }
+  ],  ``
+
+  "questionarie_answers": {
+  },
+
+  "prescriptionForPatient": [
+    {
+      "medicine": "Paracetamol",
+      "dose": ".5g",
+      "message": "Please, take .5g of Paracetaml",
+      "amount": 15
+    },
+    {
+      "medicine": "Paracetamol",
+      ""
+    }
+  ]
+}

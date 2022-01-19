@@ -1,0 +1,15 @@
+mutation g {
+  patientUser {
+    delete(id_: "5fd0876729e444a1faf3924c") {
+      error {
+        code
+        message
+        __typename
+        ... on TitleAlreadyTakenError {
+          path
+        }
+      }
+      ok
+    }
+  }
+}

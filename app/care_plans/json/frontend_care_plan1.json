@@ -1,0 +1,432 @@
+{
+    "graph": [
+        {
+            "id": "3",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "DGRtWIHfy",
+            "target": "DS9IG4uN7",
+            "parentId": "1"
+        },
+        {
+            "id": "4",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "DS9IG4uN7",
+            "target": "vk7YDj_Qq",
+            "parentId": "1"
+        },
+        {
+            "id": "5",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "DS9IG4uN7",
+            "target": "YQkhq3fjt",
+            "parentId": "1"
+        },
+        {
+            "id": "6",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "DS9IG4uN7",
+            "target": "TUepc-NTP",
+            "parentId": "1"
+        },
+        {
+            "id": "7",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "vk7YDj_Qq",
+            "target": "rrjlMpZ0O",
+            "parentId": "1"
+        },
+        {
+            "id": "8",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "YQkhq3fjt",
+            "target": "IsiLlZLXO",
+            "parentId": "1"
+        },
+        {
+            "id": "9",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "TUepc-NTP",
+            "target": "_HztMDHbz",
+            "parentId": "1"
+        },
+        {
+            "id": "10",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "IsiLlZLXO",
+            "target": "3xIx-Dhvz",
+            "parentId": "1"
+        },
+        {
+            "id": "11",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "rrjlMpZ0O",
+            "target": "3xIx-Dhvz",
+            "parentId": "1"
+        },
+        {
+            "id": "12",
+            "vertex": false,
+            "edge": true,
+            "connectable": true,
+            "geometry": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "relative": true
+            },
+            "value": "",
+            "source": "_HztMDHbz",
+            "target": "3xIx-Dhvz",
+            "parentId": "1"
+        },
+        {
+            "id": "DGRtWIHfy",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 736,
+                "y": -754.5,
+                "width": 200,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "type": "1",
+                "text": "Hello hello",
+                "id": "DGRtWIHfy",
+                "children": [],
+                "isSource": true
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "DS9IG4uN7",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 736,
+                "y": -624.5,
+                "width": 250,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "DS9IG4uN7",
+                "text": "How are you????",
+                "type": "11",
+                "parentId": "1",
+                "children": [
+                    {
+                        "id": "vk7YDj_Qq",
+                        "value": {
+                            "text": "good",
+                            "type": "8",
+                            "childParentId": "DS9IG4uN7"
+                        },
+                        "offsetY": 50,
+                        "width": 100,
+                        "height": 50,
+                        "offsetX": -200
+                    },
+                    {
+                        "id": "YQkhq3fjt",
+                        "value": {
+                            "text": "bad",
+                            "type": "8",
+                            "childParentId": "DS9IG4uN7"
+                        },
+                        "offsetY": 50,
+                        "width": 100,
+                        "height": 50,
+                        "offsetX": -50
+                    },
+                    {
+                        "id": "TUepc-NTP",
+                        "value": {
+                            "text": "normal",
+                            "type": "8",
+                            "childParentId": "DS9IG4uN7"
+                        },
+                        "offsetY": 50,
+                        "width": 100,
+                        "height": 50,
+                        "offsetX": 100
+                    }
+                ],
+                "isSource": false,
+                "isChildrenShown": true,
+                "questionType": "14",
+                "width": 250,
+                "height": 80
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "vk7YDj_Qq",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 661,
+                "y": -494.5,
+                "width": 100,
+                "height": 50,
+                "relative": false
+            },
+            "value": {
+                "id": "vk7YDj_Qq",
+                "text": "good",
+                "type": "8",
+                "childParentId": "DS9IG4uN7",
+                "parentId": "DS9IG4uN7"
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "YQkhq3fjt",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 811,
+                "y": -494.5,
+                "width": 100,
+                "height": 50,
+                "relative": false
+            },
+            "value": {
+                "id": "YQkhq3fjt",
+                "text": "bad",
+                "type": "8",
+                "childParentId": "DS9IG4uN7",
+                "parentId": "DS9IG4uN7"
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "TUepc-NTP",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 961,
+                "y": -494.5,
+                "width": 100,
+                "height": 50,
+                "relative": false
+            },
+            "value": {
+                "id": "TUepc-NTP",
+                "text": "normal",
+                "type": "8",
+                "childParentId": "DS9IG4uN7",
+                "parentId": "DS9IG4uN7"
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "rrjlMpZ0O",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 490,
+                "y": -394.5,
+                "width": 220,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "rrjlMpZ0O",
+                "text": "You choose choice 1",
+                "type": "1",
+                "parentId": "1",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "IsiLlZLXO",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 726,
+                "y": -299.5,
+                "width": 220,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "IsiLlZLXO",
+                "text": "You choose choice 2",
+                "type": "1",
+                "parentId": "1",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "_HztMDHbz",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 961,
+                "y": -394.5,
+                "width": 220,
+                "height": 80,
+                "relative": false
+            },
+            "value": {
+                "id": "_HztMDHbz",
+                "text": "You choose choice 3",
+                "type": "1",
+                "parentId": "1",
+                "children": [],
+                "isSource": false
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        },
+        {
+            "id": "3xIx-Dhvz",
+            "vertex": true,
+            "edge": false,
+            "connectable": true,
+            "geometry": {
+                "x": 710,
+                "y": 30.5,
+                "width": 250,
+                "height": 180,
+                "relative": false
+            },
+            "value": {
+                "id": "3xIx-Dhvz",
+                "text": " НУМЕРИК",
+                "type": "11",
+                "parentId": "1",
+                "children": [],
+                "isSource": false,
+                "questionType": "15",
+                "min": 2,
+                "max": 10,
+                "width": 250,
+                "height": 180
+            },
+            "source": null,
+            "target": null,
+            "parentId": "1"
+        }
+    ]
+}

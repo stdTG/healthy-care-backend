@@ -1,0 +1,29 @@
+{
+  "shortName": "ignilife",
+  "fullName": "Ignilife",
+  "awsRegion": "eu-west-1",
+  "dbHosts": {
+    "hostAlias1": "tenant-host-1",
+    "hostAlias2": "tenant-host-2"
+  },
+  "admin": {
+    "email": "alakine@nrg-soft.com",
+    "phoneNumber": "+793333333",
+    "password": "Qwerty123"
+  }
+}
+
+{
+  "shortName": "apple",
+  "fullName": "Apple Inc.",
+  "awsRegion": "eu-west-1",
+  "dbHosts": {
+    "hostAlias1": "tenant-host-1",
+    "hostAlias2": "tenant-host-2"
+  },
+  "admin": {
+    "email": "alakine@nrg-soft.com",
+    "phoneNumber": "+793333333",
+    "password": "Qwerty123"
+  }
+}

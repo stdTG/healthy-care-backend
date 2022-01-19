@@ -1,0 +1,40 @@
+{
+  "_id": ObjectId(
+  "5f8d0ed1ae0622e62729eb9d"
+  ),
+  "short_name": "ignilife",
+  "human_friendly_name": "Ignilife",
+  "tenant_db_1": {
+    "host_alias": "tenant-host-1",
+    "db_name": "ignilife_1"
+  },
+  "tenant_db_2": {
+    "host_alias": "tenant-host-1",
+    "db_name": "ignilife_2"
+  },
+  "admin_email": "alakine@nrg-soft.com",
+  "admin_phone_number": "+79117805596",
+  "aws_region": "eu-west-1",
+  "friendly_workspaces": [
+    "apple_france",
+    "apple_brazil",
+    "apple_us"
+  ],
+  "cognito": {
+    "user_pool_id": "eu-west-1_zfctVE7bm",
+    "dashboard_client_id": "3sgbunmk4ti8igtsop7ughtj58",
+    "mobile_client_id": "242j9pppa7re706vf3valgmou",
+    "aws_region": "eu-west-1"
+  },
+  "sendbird": {
+    "app_id": "B99A8C66-2C7F-4B77-B728-1E3A253C15D5",
+    "api_token": "03e6aea82c03f970afab39011963d33aaf5a8c75",
+    "dashboard_token": "1201555348b67be295a9fef8e60f99620069b426",
+    "mobile_token": "0c87c828172995563e7b07eae9dd5fe0dfe698e6"
+  },
+  "s3": {
+    "aws_region": "eu-west-1",
+    "name": "alakine-oleg-ignilife"
+  },
+  "celery_mq_url": "amqps://vlad:6qFi1KbM0yVc@b-da593f03-0502-419c-9778-46bbb29c1d97.mq.eu-west-3.amazonaws.com:5671"
+}

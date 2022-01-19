@@ -1,0 +1,20 @@
+{
+  "Comment": "Alakine Greeting",
+  "StartAt": "Greeting",
+  "States": {
+    "Greeting": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:eu-west-3:673544484741:function:alakine-celery-client:$LATEST",
+        "Payload": {
+          "taskName": "care_plans.text",
+          "stepName": "$$.State.Name",
+          "carePlanId": "$.input.carePlanId",
+          "patientId": "$.input.patientId"
+        }
+      },
+      "End": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+DUMP
+mongodump --archive="alakine" --db=alakine --host=192.168.1.37
+mongodump --archive="ignilife_1" --db=ignilife_1 --host=192.168.1.37
+mongodump --archive="ignilife_2" --db=ignilife_2 --host=192.168.1.37
+
+
+RESTORE
+mongorestore --archive="alakine" --db=alakine --host=localhost
+mongorestore --archive="ignilife_1" --db=ignilife_1 --host=localhost
+mongorestore --archive="ignilife_2" --db=ignilife_2 --host=localhost
+
+
+
